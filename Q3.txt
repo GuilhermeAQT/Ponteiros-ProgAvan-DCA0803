@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+int i=5, *p;
+p = &i;
+
+printf("%x \n", p); // retorna o número 5 em hexadecimal
+printf("%d \n",*p+2); //adiciona 2 ao contéudo de p, que está no endereço de de i, sendo i=5, então faz a operação 5+2=7
+printf("%d \n",**&p);//retonar o número 5, pois utiliza o ponteiro de dereferência para mostar o contéudo presente em p
+printf("%d \n",3**p);// multiplica o conteúdo de p por 3, retornando o número 15
+printf("%d \n",**&p+4);//utiliza o ponteiro de dereferência para saber o contéudo de "p" e soma com o número 4, resultando em 9
+
+
+
+return 0;
+}

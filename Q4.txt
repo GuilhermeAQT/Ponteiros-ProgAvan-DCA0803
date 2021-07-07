@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void){
+	
+int i=3,j=4;
+int *p, *q;	
+	
+p = i; // ILEGAL
+q = &j;
+p = &*&i;
+i = (*&)j; // ILEGAL
+i = *&j;
+i = *&*&j;
+q = *p;//ILEGAL
+i = (*p)++ + *q;
+
+
+}

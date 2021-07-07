@@ -1,0 +1,16 @@
+O program é copilado e executado corretamente e retorna o seguinte trecho:
+
+20
+29.0
+P
+e
+P
+e
+t
+31
+45
+27
+31
+45
+27
+

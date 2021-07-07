@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+	int i=3,j=5; // Diz que  "i" é 3 e "j" é 5;
+	int *p, *q; // Cria variavéis do tipo ponteiro de p(*p) e de q(*q)
+	p = &i; // Guarda o endereço de "i" em "p"
+	q = &j; // Guarda o endereço de "j" em "q"
+
+printf("%d \n", p == &i ); // retorna 1
+printf("%d \n", *p - *q ); // retorna -2 pois subtrai o conteúdo do ponteiro "p" pelo conteúdo do ponteiro "q", resultando em 3 - 5 = -2
+printf("%d \n", **&p ); //retorna 3 pois estamos utilizando o duplo ponteiro que aponta o conteúdo presente no endereço do ponteiro p
+printf("%d \n", 3 - *p/(*q) + 7 ); // retorna 10 pois o conteudo de "p" e "q" que divididos resultam em "0", por ser uma divisão entre "int"
+
+return 0;
+}

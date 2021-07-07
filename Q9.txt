@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void){
+  int vet[] = {4,9,13}; // cria um vetor com 3 dimensões com 3 parametros definidos
+  int i;
+  for(i=0;i<3;i++){
+    printf("%d ",*(vet+i));
+  }
+  
+  return 0;
+}
+
+// Este programa em C, quando copilado e executado, retorna os valores presentes no vetor "vet[]";
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+  int vet[] = {4,9,13}; // cria um vetor com 3 dimensões com 3 parametros definidos
+  int i;
+  for(i=0;i<3;i++){
+    printf("%X ",vet+i);
+  }
+  return 0;
+}
+
+// Este programa em C, quando copilado e executado, retorna os endereços presentes no vetor "vet[]";

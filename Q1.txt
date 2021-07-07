@@ -1,0 +1,1 @@
+1. O uso de ponteiros pelo engenheiro é de suma importância, pois permite que, ao invés de trabalhar com o que tem dentro(valor) da variavél, ele traz consigo o endereço de onde está alocado na memória tais dados, isso dá precisão, exatidão e simplicidade para a alocação dinâmica da memória.

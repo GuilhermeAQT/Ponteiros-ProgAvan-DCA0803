@@ -1,0 +1,15 @@
+A opção que aponta para o terceiro elemento do vetor é: *(pulo + 2);
+
+Teste realizado pelo seguinte trecho de programa:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void){
+int pulo[] = {1, 2, 3, 4, 5};	
+	
+printf("%d, %d, %d, %d", *(pulo + 2), *(pulo + 4), pulo + 4, pulo + 2);
+
+return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+int mat[4]={1,3,5,7}, *p, x;
+
+p = mat + 1; // válida, pois adiciona 1 posição, partindo do primeiro byte.
+printf("%d \n", *p);
+//p = mat++; inválida
+//p = ++mat; forma de incremento inválida
+x = (*mat)++;// Váloda, porém não acontece o esperado, pois retorna o valor do elemento na primeira posição do array
+printf("%d \n", x);
+
+return 0;
+}

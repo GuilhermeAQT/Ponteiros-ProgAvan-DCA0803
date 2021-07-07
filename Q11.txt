@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+	
+	int x[4];
+	int *px, i;
+	px = x;
+	
+	char y[4];
+	char *py;
+	py = y;
+	
+	float z[4];
+	float *pz;
+	pz = z;
+	
+	double w[4];
+	double *pw;
+	pw = w;
+	
+	printf("Utilizando tipo int: \n");
+	for(i=0;i<4;i++){
+	px = px+1;
+	printf("px + %d = %d \n", i, px);
+	}	
+	
+	printf("\n");
+	
+	printf("Utilizando tipo char: \n");
+	for(i=0;i<4;i++){
+	py = py+1;
+	printf("py + %d = %d \n", i, py);
+	}	
+	
+	printf("\n");
+	
+	printf("Utilizando tipo float: \n");
+	for(i=0;i<4;i++){
+	pz = pz + 1;
+	printf("px + %d = %d \n", i, pz);
+	}	
+	
+	printf("\n");
+	
+	printf("Utilizando tipo double: \n");
+	for(i=0;i<4;i++){
+	pw = pw + i;
+	printf("px + %d = %d \n", i, pw);
+	}
+	
+	
+	
+	return 0;
+}
